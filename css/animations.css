@@ -1,0 +1,312 @@
+.hidden {
+  opacity: 0;
+}
+
+/* 
+========================================== 
+Scroll down animation 
+========================================== 
+*/
+
+.scrollDownAnimation {
+    animation: animationFrames ease 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: animationFrames ease 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: animationFrames ease 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: animationFrames ease 3s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: animationFrames ease 3s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+    animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: translate(0px, 0px) scaleY(1.00);
+    }
+    
+    15% {
+        transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    34% {
+        transform: translate(0px, 20px) scaleY(1.20);
+    }
+
+    53% {
+        transform: translate(0px, -15px) scaleY(0.95);
+    }
+
+    80% {
+        transform: translate(0px, 4px) scaleY(0.90);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scaleY(1.00);
+    }
+}
+
+@-moz-keyframes animationFrames {
+    0% {
+        -moz-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    15% {
+        -moz-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    34% {
+        -moz-transform: translate(0px, 20px) scaleY(1.20);
+    }
+
+    53% {
+        -moz-transform: translate(0px, -15px) scaleY(0.95);
+    }
+
+    80% {
+        -moz-transform: translate(0px, 4px) scaleY(0.90);
+    }
+
+    100% {
+        -moz-transform: translate(0px, 0px) scaleY(1.00);
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    0% {
+        -webkit-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    15% {
+        -webkit-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    34% {
+        -webkit-transform: translate(0px, 20px) scaleY(1.20);
+    }
+
+    53% {
+        -webkit-transform: translate(0px, -15px) scaleY(0.95);
+    }
+
+    80% {
+        -webkit-transform: translate(0px, 4px) scaleY(0.90);
+    }
+
+    100% {
+        -webkit-transform: translate(0px, 0px) scaleY(1.00);
+    }
+}
+
+@-o-keyframes animationFrames {
+    0% {
+        -o-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    15% {
+        -o-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    34% {
+        -o-transform: translate(0px, 20px) scaleY(1.20);
+    }
+
+    53% {
+        -o-transform: translate(0px, -15px) scaleY(0.95);
+    }
+
+    80% {
+        -o-transform: translate(0px, 4px) scaleY(0.90);
+    }
+
+    100% {
+        -o-transform: translate(0px, 0px) scaleY(1.00);
+    }
+}
+
+@-ms-keyframes animationFrames {
+    0% {
+        -ms-transform: translate(0px, 0px) scaleY(1.00);
+    }
+
+    24% {
+        -ms-transform: translate(0px, 20px) scaleY(1.20);
+    }
+
+    53% {
+        -ms-transform: translate(0px, -15px) scaleY(0.95);
+    }
+
+    80% {
+        -ms-transform: translate(0px, 4px) scaleY(0.90);
+    }
+
+    100% {
+        -ms-transform: translate(0px, 0px) scaleY(1.00);
+    }
+}
+
+
+
+/* 
+========================================== 
+Animate In
+========================================== 
+*/
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.slideUpB {
+
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1.7s;
+    -webkit-animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.slideUpC {
+
+    animation-name: slideUpB, animationFrames;
+    -webkit-animation-name: slideUpB, animationFrames;
+    -webkit-animation-duration: 1.7s, 3s;
+    animation-iteration-count: infinite;
+    -webhit-animation-iteration-count: infinite;
+    animation-delay: 0s, 1.7s; /* add this */
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+/*First*/
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(250%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideUpB {
+    0% {
+        -webkit-transform: translateY(250%);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideUpC {
+    0% {
+        -webkit-transform: translateY(250%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* 
+========================================== 
+Animate In ON SCROLL
+========================================== 
+*/
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.slideUpB {
+
+    animation-name: slideUpB;
+    -webkit-animation-name: slideUpB;
+    animation-duration: 1.7s;
+    -webkit-animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.slideUpC {
+
+    animation-name: slideUpC, animationFrames;
+    -webkit-animation-name: slideUpC, animationFrames;
+    -webkit-animation-duration: 1.9s, 3s;
+    animation-iteration-count: infinite;
+    -webhit-animation-iteration-count: infinite;
+    animation-delay: 0s, 1.9s; /* add this */
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+/*First*/
+
+
+
+.fade-in {
+    animation-name: fade-in;
+    -webkit-animation-name: fade-in;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(250%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        -webkit-transform: translateY(250%);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+        opacity: 1;
+    }
+}
