@@ -150,27 +150,28 @@ Banner
 
 .bannerContainer img {
     display: block;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 25vh;
+    padding-top: 20vh;
     z-index: 1;
     margin-bottom: 20px;
     padding-right: 2vw;
 }
 
 .bannerContainer h1 {
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 65px;
-    top: 35vh;
+    padding-top: 0vh;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .bannerContainer h2 {
+    display: block;
     font-family: 'Cinzel', serif;
     color: #efefef;
     font-size: 35px;
-    top: 40vh;
+    padding-top: 10vh;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -182,6 +183,60 @@ Banner
     top: 42vh;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+.menu {
+    display: grid;
+    padding-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    Height: 300px;
+    width: 800px;
+    border: 1px solid silver;
+    background: white;
+    grid-template-columns:  25%, 25%, 25%, 25%;
+  grid-template-rows:  50%, 50%;
+}
+
+.smallLinkBoxA .smallLinkBoxB .smallLinkBoxC .smallLinkBoxD .largeLinkBox {
+    border: 1px solid silver;
+}
+
+.smallLinkBoxA {
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} 
+
+.smallLinkBoxB {
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} 
+
+.smallLinkBoxC {
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} 
+.smallLinkBoxD {
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+} 
+
+.largeLinkBox {
+    grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+
+
 /* 
 ========================================== 
 END Banner
