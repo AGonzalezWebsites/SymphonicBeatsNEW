@@ -83,6 +83,7 @@ Banner
     background-position: center 30%;
     background-attachment: fixed;
     z-index: auto;
+    overflow-y: scroll;
 }
 
 .bannerContainer img {
@@ -171,7 +172,7 @@ Beat Store
 ========================================== 
 */
 .beatStoreContainer {
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
