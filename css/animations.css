@@ -38,7 +38,7 @@ Scroll down animation
     }
 
     34% {
-        transform: translate(0px, 20px) scaleY(1.20);
+        transform: translate(0px, 20px) scaleY(1.05);
     }
 
     53% {
@@ -64,7 +64,7 @@ Scroll down animation
     }
 
     34% {
-        -moz-transform: translate(0px, 20px) scaleY(1.20);
+        -moz-transform: translate(0px, 20px) scaleY(1.05);
     }
 
     53% {
@@ -90,7 +90,7 @@ Scroll down animation
     }
 
     34% {
-        -webkit-transform: translate(0px, 20px) scaleY(1.20);
+        -webkit-transform: translate(0px, 20px) scaleY(1.05);
     }
 
     53% {
@@ -116,7 +116,7 @@ Scroll down animation
     }
 
     34% {
-        -o-transform: translate(0px, 20px) scaleY(1.20);
+        -o-transform: translate(0px, 20px) scaleY(1.05);
     }
 
     53% {
@@ -138,7 +138,7 @@ Scroll down animation
     }
 
     24% {
-        -ms-transform: translate(0px, 20px) scaleY(1.20);
+        -ms-transform: translate(0px, 20px) scaleY(1.05);
     }
 
     53% {
@@ -187,7 +187,7 @@ Animate In
 
     animation-name: slideUpB, animationFrames;
     -webkit-animation-name: slideUpB, animationFrames;
-    -webkit-animation-duration: 1.7s, 3s;
+    -webkit-animation-duration: 1.7s, 20s;
     animation-iteration-count: infinite;
     -webhit-animation-iteration-count: infinite;
     animation-delay: 0s, 1.7s; /* add this */
@@ -200,7 +200,7 @@ Animate In
 
 @keyframes slideUp {
     0% {
-        transform: translateY(250%);
+        transform: translateY(150%);
         opacity: 0;
     }
 
@@ -212,7 +212,7 @@ Animate In
 
 @-webkit-keyframes slideUpB {
     0% {
-        -webkit-transform: translateY(250%);
+        -webkit-transform: translateY(150%);
         opacity: 0;
     }
 
@@ -224,7 +224,7 @@ Animate In
 
 @-webkit-keyframes slideUpC {
     0% {
-        -webkit-transform: translateY(250%);
+        -webkit-transform: translateY(150%);
     }
 
     100% {
@@ -263,7 +263,7 @@ Animate In ON SCROLL
 
     animation-name: slideUpC, animationFrames;
     -webkit-animation-name: slideUpC, animationFrames;
-    -webkit-animation-duration: 1.9s, 3s;
+    -webkit-animation-duration: 1.9s, 20s;
     animation-iteration-count: infinite;
     -webhit-animation-iteration-count: infinite;
     animation-delay: 0s, 1.9s; /* add this */
@@ -289,7 +289,7 @@ Animate In ON SCROLL
 
 @keyframes fade-in {
     0% {
-        transform: translateY(250%);
+        transform: translateY(150%);
         opacity: 0;
     }
 
@@ -301,7 +301,7 @@ Animate In ON SCROLL
 
 @-webkit-keyframes fade-in {
     0% {
-        -webkit-transform: translateY(250%);
+        -webkit-transform: translateY(150%);
         opacity: 0;
     }
 
