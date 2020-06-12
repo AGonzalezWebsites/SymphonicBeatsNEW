@@ -70,7 +70,7 @@ Banner
 */
 
 .bannerContainer {
-    display: block;
+    display: inline-block;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -82,7 +82,7 @@ Banner
     moz background-size: cover;
     background-position: center 30%;
     background-attachment: fixed;
-    z-index: auto;
+    z-index: 0;
 }
 
 .bannerContainer img {
@@ -250,12 +250,33 @@ p {
 #beatLoad2 {
     display: none;
 }
+
 /* 
 ========================================== 
 END Beat Store
 ========================================== 
 */
 
+/* 
+========================================== 
+License Info
+========================================== 
+*/
+
+.licenseInfoContainer {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: silver;
+    z-index: 5;
+}
+
+
+.licenseInfoContainer h1 {
+    font-size: 40px;
+    color: black;
+}
 
 .footerContainer {
     height: 0px;
