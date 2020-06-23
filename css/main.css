@@ -288,15 +288,32 @@ License Info
     flex-direction: row;
     width: 70%;
     padding: 20px;
-    background: rgb(70, 70, 70);
     border-radius: 5px;
     z-index: 6;
 }
 
+#licenseTitle {
+    background: rgb(85, 85, 85);
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 15px;
+    border-bottom: 5px outset rgb(235, 184, 91);;
+}
+
 .licenseInfoContainer h1 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin: 20px 10px 10px 10px;
     color: white;
+}
+
+.licenseInfoContainer h2 {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+    color: rgb(235, 184, 91);
+}
+
+.licenseInfoContainer b {
+    color: rgb(235, 184, 91);
 }
 
 .licenseInfoContainer i {
@@ -306,17 +323,27 @@ License Info
 
 .licenseContract {
     flex-grow: 2;
-    background: rgba(255, 0, 0, 0);
+    background: rgb(85, 85, 85);
+    border-radius: 5px;
     height: auto;
-    padding-right: 20px;
+    margin: 15px;
+    padding: 25px;
 }
 
 .licenseSelection {
+    text-align: center;
     flex-grow: 1;
-    background: rgb(29, 29, 29);
+    background: rgb(85, 85, 85);
     border-radius: 5px;
-    padding: 5px;
+    margin: 15px;
     height: auto;
+}
+
+.leaseSelect h1{
+    border: 4px outset rgb(235, 184, 91);
+    border-radius: 5px;
+    background: rgb(80, 61, 30);
+    color: rgb(233, 182, 89);
 }
 
 .footerContainer {
